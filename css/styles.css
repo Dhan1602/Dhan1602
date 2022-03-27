@@ -1,0 +1,105 @@
+body{
+    background: black;
+    color: white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    font-size: 40px;
+    scroll-behavior: smooth;
+    cursor: default;
+}
+
+
+
+
+#containertotal{
+    width: 100%;
+    background-color: white;
+}
+
+#portada{
+    padding: 0%;
+    margin: 0px auto;
+    background: rgb(17, 17, 17);
+    color: white;
+    height: 896px;
+    width: 98vw;
+    background-repeat: no-repeat;
+	background-size: 100% 100%;
+    border-radius: 15px;
+
+}
+#portada label{
+    color: rgb(38, 129, 122);
+}
+
+#informacionuno{
+    text-align: center;
+    font-size: 82px;
+    
+}
+
+#informacionuno label{
+    position: relative;
+}
+#informacionuno span{
+    position: absolute;
+    right: 0;
+    width: 0;
+    border-left: 3px solid white;
+    background-color: rgb(17, 17, 17);
+    
+    animation: escribir 3s infinite alternate;
+    
+}
+
+@keyframes escribir {
+    from{
+        width: 100%;
+    }
+    to{
+        width: 0;
+    }
+}
+
+
+#barracontent{
+
+    margin-top: 4px;
+    border-bottom: 1px solid white;
+    padding: 0px;
+    width: 100%;
+    height: 100px;
+    background-color: black;
+
+}
+
+.barra{
+    height: 95px;
+    padding: 10px;
+    font-size: 38px;
+    background-color: rgb(19, 19, 19);
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 16px;
+    transition: all 0.3s ease 0s;
+}
+
+.barra.active{
+    background-color: rgb(53, 53, 53);
+    cursor:default;
+}
+
+.barra:hover{
+    background-color: rgb(53, 53, 53);
+}
+
+@keyframes scroll{
+    0%{
+        transform: translate(100%);
+    }
+}
+
+#contenidoSobreMi h1{
+    color: rgb(38, 129, 122);
+}
