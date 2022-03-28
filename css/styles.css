@@ -138,3 +138,31 @@ body{
     padding-top: 1px;
 }
 
+#containerHobbies{
+    margin: 3px auto;
+    display: flex;
+    align-items: center;
+}
+
+.hobbies{
+    
+    margin-left: 30px;
+    width: 380px;
+    height: 380px;
+    background-color: rgb(26, 26, 26);
+    border-radius: 16px;
+    
+}
+
+.hobbie{
+    margin: auto;
+    height: 100%;
+    width: 98%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.hobbie:hover{
+    opacity: 30%;
+    transition: all 0.3s ease 0s;
+}
