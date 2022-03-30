@@ -18,7 +18,6 @@ window.addEventListener("scroll", function () {
 
     var posicionObj1 = animacion1.getBoundingClientRect().top;
     var posicionObj2 = contSobreMi.getBoundingClientRect().top;
-    console.log(posicionObj1);
     let tamañoDePantalla = window.innerHeight / 1.7;
     let tamañoDePantalla2 = window.innerHeight / 2.3;
 
