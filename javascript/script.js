@@ -103,3 +103,24 @@ function aparecer(a) {
     a.style.opacity = "100%"
     a.style.animation = "scroll 2s ease-out"
 }
+
+//link a mis redes sociales
+
+const igmail = document.querySelector("#gmail");
+const ilinkedin = document.querySelector("#linkedin");
+const iinstagram = document.querySelector("#instagram");
+
+igmail.addEventListener("click", function(){
+    var sLink = "mailto:" + escape("danielesteban2004@gmail.com")
+	 + "?subject=" + escape("Saludo")
+	 + "&body=" + "Hola Dani!";
+	window.location.href = sLink;
+})
+
+ilinkedin.addEventListener("click", function(){
+    window.location="https://www.linkedin.com/in/daniel-velasquez-9523411b2/"
+})
+
+iinstagram.addEventListener("click", function(){
+    window.location="https://www.instagram.com/dhan_music25/"
+})
