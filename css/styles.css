@@ -78,7 +78,8 @@ body {
     height: 100px;
     background-color: black;
     transition: all 1s ease 0s;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    padding-bottom: 30px;
 
 }
 
@@ -93,11 +94,12 @@ body {
     border-radius: 16px;
     transition: all 0.4s ease 0s;
     margin-top: 20px;
-    margin-bottom: 20px;
+    padding-bottom: 30px;
 }
 
 #contTotal{
-    margin-top: 20px;
+    margin-top: 10px;
+    padding-top: 30px;
 }
 
 .barra.active {
@@ -301,8 +303,11 @@ cursor: pointer;
 /* //responsive */
 #containerFlexboxPagina{
     display: flex;
-    margin: 30px;
+    margin: 10px auto;
+    padding: 15px;
     flex-direction: column;
+    width: 100%;
+    
 }
 
 .todoFlex{
