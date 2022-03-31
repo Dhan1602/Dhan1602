@@ -342,3 +342,12 @@ cursor: pointer;
         color: rgb(38, 129, 122);
     }
 }
+
+@media screen and (max-width: 400px) {
+    #containerTecnologias{
+        grid-gap: 15px;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(3, 225px);
+    }
+
+}
