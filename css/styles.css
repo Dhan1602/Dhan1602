@@ -1,3 +1,7 @@
+*{
+    user-select:none;
+}
+
 body {
     background: black;
     color: white;
@@ -7,9 +11,6 @@ body {
     scroll-behavior: smooth;
     cursor: default;
 }
-
-
-
 
 #containertotal {
     width: 100%;
@@ -267,4 +268,12 @@ cursor: pointer;
 #linkedin{
     cursor: pointer;
 
+}
+
+.redes{
+    transition: all 0.2s ease 0s;
+}
+
+.redes:hover{
+    opacity: 80%;
 }
