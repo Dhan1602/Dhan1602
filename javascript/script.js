@@ -23,7 +23,6 @@ window.addEventListener("scroll", function () {
 
     if (posicionObj1 < tamañoDePantalla) {
         animacion1.style.opacity = "100%"
-        animacion1.style.animation = "scroll 2s ease-out"
         bajar.style.opacity = "0%"
     } else {
         animacion1.style.opacity = "0%"
@@ -32,7 +31,6 @@ window.addEventListener("scroll", function () {
     }
     if (posicionObj2 < tamañoDePantalla2) {
         contSobreMi.style.opacity = "100%"
-        contSobreMi.style.animation = "scroll 2s ease-out"
     } else {
         contSobreMi.style.opacity = "0%"
     }
@@ -101,7 +99,6 @@ contacto.addEventListener("click", function () {
 //animaciones aparecer
 function aparecer(a) {
     a.style.opacity = "100%"
-    a.style.animation = "scroll 2s ease-out"
 }
 
 //link a mis redes sociales

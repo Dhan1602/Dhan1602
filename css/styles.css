@@ -1,43 +1,26 @@
-*{
-    user-select:none;
-}
-
 body {
-    background: black;
+    background: #000000;
     color: white;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
-    font-size: 40px;
+    font-size: 1.6vw;
     scroll-behavior: smooth;
     cursor: default;
     padding: 20px;
     text-align: center;
+
 }
-
-#containertotal {
-    width: 100%;
-    background-color: white;
-}
-
-
 
 #portada {
-    padding: 0%;
-    margin: 0px auto;
     background: rgb(0, 0, 0);
-    color: white;
-    height: 896px;
-    width: 98vw;
     background-repeat: no-repeat;
     background-size: 100% 100%;
     border-radius: 15px;
-    margin-bottom: 30px;
-    padding-bottom: 10px;
 
 }
 
 #portada h1 {
-    color: rgb(38, 129, 122);
+    color: rgb(100, 198, 190);
 }
 
 #portada label {
@@ -45,9 +28,7 @@ body {
 }
 
 #informacionuno {
-    text-align: center;
-    font-size: 82px;
-
+    font-size: 4.3vw;
 }
 
 #informacionuno label {
@@ -60,7 +41,6 @@ body {
     width: 0;
     border-left: 3px solid white;
     background-color: rgb(0, 0, 0);
-
     animation: escribir 3s infinite alternate;
 
 }
@@ -75,44 +55,53 @@ body {
     }
 }
 
+#bajar {
+    transition: all 1s ease 0s;
+    animation: parpadear 1.4s infinite alternate;
+}
+
+@keyframes parpadear {
+    from {
+        opacity: 0%;
+    }
+
+    to {
+        opacity: 100%;
+    }
+}
+
+#baja {
+    font-size: 1.6vw;
+    padding-bottom: 10px;
+    margin-bottom: 10;
+}
 
 #barracontent {
 
-    margin-top: 20px;
-    padding: 0px;
+    margin-top: 2.5vh;
     width: 100%;
-    height: 100px;
     background-color: black;
     transition: all 1s ease 0s;
-    margin-bottom: 20px;
-    padding-bottom: 30px;
+    margin-bottom: 1vh;
 
 }
 
 .barra {
-    height: 95px;
+    height: 8vh;
     padding: 10px;
-    font-size: 38px;
+    font-size: 1.6vw;
     background-color: rgb(12, 12, 12);
     border: none;
     color: white;
     cursor: pointer;
-    border-radius: 16px;
+    border-radius: 10px;
     transition: all 0.4s ease 0s;
     margin-top: 20px;
-    padding-bottom: 30px;
-
-}
-
-#contTotal{
-    margin-top: 10px;
-    padding-top: 30px;
 
 }
 
 .barra.active {
     background-color: rgb(53, 53, 53);
-    cursor: default;
 }
 
 .barra:hover {
@@ -121,12 +110,6 @@ body {
 
 .barra:active {
     background-color: rgb(37, 37, 37);
-}
-
-@keyframes scroll {
-    0% {
-        transform: translate(100%);
-    }
 }
 
 .containers {
@@ -138,58 +121,26 @@ body {
     width: 100%;
 }
 
-#bajar {
-    transition: all 1s ease 0s;
-    animation: parpadear 2s infinite alternate;
-
-}
-
-@keyframes parpadear {
-    from {
-        opacity: 100%;
-    }
-
-    to {
-        opacity: 0%;
-    }
-}
-
-#baja {
-    font-size: 39px;
-
-    padding-bottom: 10px;
-    margin-bottom: 10;
-}
-
-#flecha {
-    margin-top: 1px;
-    padding-top: 1px;
-}
-
 #containerHobbies {
     display: grid;
     align-items: center;
     text-align: center;
     margin-bottom: 50px;
     padding-bottom: 30px;
-    font-size: 30px;
     grid-gap: 142px;
-    grid-template-columns: repeat(2, auto);
-    grid-template-rows: repeat(2, 270px);
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, 30vh);
 
 }
 
 .hobbies {
-    margin-top: 100px;
-    width: 100%;
-    height: 15vw;
+
+    height: 20vh;
     text-align: center;
     background-color: rgb(26, 26, 26);
     border-radius: 16px;
 
 }
-
-
 
 .hobbie {
     margin: auto;
@@ -206,38 +157,18 @@ body {
 }
 
 
-.hobbie:hover {
-    opacity: 30%;
-    transition: all 0.3s ease 0s;
-}
-
-#habilidades {
-    margin-top: 12px;
-}
-
-li {
-    list-style-type: none;
-}
 
 .iconos {
-    height: 10rem;
-}
-
-#habilidades{
-    text-align: center;
-    justify-content: center;
-    justify-items: center;
-    margin: 0 auto;
+    height: 15vh;
+    margin-top: 10px;
 }
 
 #containerTecnologias{
     display: grid;
     align-items: center;
     text-align: center;
-    margin: auto auto;
-    margin-bottom: 20px;
-    padding-bottom: 30px;
-    font-size: 30px;
+    margin: 10px auto;
+    font-size: 1.6vw;
     grid-template-columns: repeat(6, auto);
     grid-template-rows: repeat(2, 60px);
 }
@@ -247,11 +178,19 @@ li {
     height: 80px;
     text-align: center;
     margin-bottom: 30px;
-    padding-bottom: 30px;
-    
-    
+    padding-bottom: 30px;  
 }
 
+#habilidades{
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    margin: 0 auto;
+}
+
+li {
+    list-style-type: none;
+}
 
 #containerProyectos{
     display: flex;
@@ -314,11 +253,9 @@ cursor: pointer;
     opacity: 80%;
 }
 
-/* //responsive */
 #containerFlexboxPagina{
     display: flex;
     margin: 10px auto;
-    padding: 15px;
     flex-direction: column;
     width: 100%;
     
@@ -328,7 +265,9 @@ cursor: pointer;
     width: 100%;
 }
 
-@media screen and (max-width: 600px) {
+/* //responsive */
+
+/* @media screen and (max-width: 600px) {
     #containerHobbies{
         grid-template-columns: repeat(1, auto);
         grid-template-rows: repeat(4, 270px);
@@ -336,10 +275,6 @@ cursor: pointer;
     #containerTecnologias{
         grid-template-columns: repeat(3, auto);
         grid-template-rows: repeat(2, 220px);
-    }
-    #portada h1 {
-        font-size: 100px;
-        color: rgb(38, 129, 122);
     }
 }
 
@@ -350,4 +285,4 @@ cursor: pointer;
         grid-template-rows: repeat(3, 225px);
     }
 
-}
+} */
