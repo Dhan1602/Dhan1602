@@ -135,7 +135,7 @@ body {
 
 .hobbies {
 
-    height: 20vh;
+    height: 240px;
     text-align: center;
     background-color: rgb(26, 26, 26);
     border-radius: 16px;
@@ -145,7 +145,7 @@ body {
 .hobbie {
     margin: auto;
     height: 100%;
-    width: 98%;
+    width: 100%;
     object-fit: cover;
     object-position: center center;
     border-radius: 16px;
@@ -159,7 +159,7 @@ body {
 
 
 .iconos {
-    height: 15vh;
+    height: 120px;
     margin-top: 10px;
 }
 
@@ -217,7 +217,7 @@ a{
     border-radius: 20px;
     margin: 0;
     padding: 0;
-    transition: all 0.5s ease 0s;
+    transition: all 0.2s ease 0s;
     overflow: auto;
 }
 
@@ -273,18 +273,60 @@ cursor: pointer;
 
 /* //responsive */
 
-/* @media screen and (max-width: 600px) {
+/* Celulares */
+ @media screen and (max-width: 480px) { 
+     .containers,#dev, #containerTecnologias, .barra{
+         font-size: 18px;
+     }
+     #baja{
+         font-size: 15px;
+     }
     #containerHobbies{
+        grid-gap: 1px;
         grid-template-columns: repeat(1, auto);
         grid-template-rows: repeat(4, 270px);
     }
+    .hobbies {
+        height: 100px;
+    }
     #containerTecnologias{
         grid-template-columns: repeat(3, auto);
-        grid-template-rows: repeat(2, 220px);
+        grid-template-rows: repeat(1, 220px);
     }
 }
 
-@media screen and (max-width: 400px) {
+/* Tablets */
+@media screen and (max-width: 768px) {
+    #containerTecnologias{
+        grid-gap: 15px;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(3, 225px);
+    }
+
+} 
+
+/* Laptop */
+@media screen and (max-width: 1024px) {
+    #containerTecnologias{
+        grid-gap: 15px;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(3, 225px);
+    }
+
+}
+
+/* Escritorio
+@media screen and (max-width: 1200px) {
+    #containerTecnologias{
+        grid-gap: 15px;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(3, 225px);
+    }
+
+}
+
+/* TV 
+@media screen and (min-width: 1201px) {
     #containerTecnologias{
         grid-gap: 15px;
         grid-template-columns: repeat(2, auto);
@@ -292,3 +334,4 @@ cursor: pointer;
     }
 
 } */
+
