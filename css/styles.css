@@ -196,6 +196,10 @@ body {
 li {
     list-style-type: none;
 }
+ul{
+    margin: 0;
+    padding: 0;
+}
 
 a{
     text-decoration: none;
