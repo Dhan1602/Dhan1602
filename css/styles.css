@@ -77,9 +77,15 @@ html{
     margin-top: 2.5vh;
     width: 100%;
     transition: all 1s ease 0s;
+    position: sticky;
+    background-color: black;
+    border-bottom: solid 1px #FFF;
+    top: 0;
+    z-index: 3;
 }
 
 .barra {
+    width: 13vw;
     height: 8vh;
     padding: 10px;
     font-size: 1.6vw;
@@ -233,27 +239,6 @@ a{
 .tituloproyectos{
     color: rgb(38, 129, 122);
 }
-#instagram{
-    background-color: white;
-    border-radius: 52px;
-    cursor: pointer;
-}
-#gmail{
-cursor: pointer;
-
-}
-#linkedin{
-    cursor: pointer;
-
-}
-
-.redes{
-    transition: all 0.2s ease 0s;
-}
-
-.redes:hover{
-    opacity: 80%;
-}
 
 #containerFlexboxPagina{
     display: flex;
@@ -279,9 +264,10 @@ cursor: pointer;
      }
 
      .barra {
+        width:25vw;
         height: 8vh;
-        padding: 10px;
-        font-size: 4vw;
+        padding: 5px;
+        font-size: 3vw;
     }
 
     #containerHobbies{
