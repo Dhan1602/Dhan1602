@@ -1,5 +1,4 @@
 var contproyectos = this.document.getElementById("contenidoProyectos");
-var contcontactos = this.document.getElementById("contenidoContacto");
 var contSobreMi = this.document.getElementById("contenidoSobreMi");
 
 
@@ -9,8 +8,7 @@ var animacion1 = this.document.getElementById("barracontent");
 var bajar = this.document.getElementById("bajar");
 animacion1.style.opacity = "0";
 contSobreMi.style.opacity = "0";
-contcontactos.style.opacity = "0";
-contproyectos.style.opacity = "0";
+// contproyectos.style.opacity = "0";
 
 
 //Animacion Scroll
@@ -36,35 +34,29 @@ window.addEventListener("scroll", function () {
     }
 
 })
-
+/*
 //Que contenido es visible
 
 var yo = this.document.getElementById("sm");
 var proyectos = this.document.getElementById("pr");
-var contacto = this.document.getElementById("cnt");
-activauno(yo, proyectos, contacto);
+// activauno(yo, proyectos);
 var b1 = true;
 var b2 = false;
-var b3 = false;
 
-contproyectos.style.display = "none";
-contcontactos.style.display = "none";
+// contproyectos.style.display = "none";
 
-function activauno(a, b, c) {
-    a.classList.add("active");
-    b.classList.remove("active");
-    c.classList.remove("active");
-}
+// function activauno(a, b, c) {
+//     a.classList.add("active");
+//     b.classList.remove("active");
+// }
 
 yo.addEventListener("click", function () {
     if (b1 == false) {
         contSobreMi.style.display = "block";
         contproyectos.style.display = "none";
-        contcontactos.style.display = "none";
         b1 = true;
         b2 = false;
-        b3 = false;
-        activauno(yo, proyectos, contacto);
+        activauno(yo, proyectos);
         aparecer(contSobreMi);
     }
 })
@@ -73,25 +65,10 @@ proyectos.addEventListener("click", function () {
     if (b2 == false) {
         contSobreMi.style.display = "none";
         contproyectos.style.display = "block";
-        contcontactos.style.display = "none";
         b1 = false;
         b2 = true;
-        b3 = false;
-        activauno(proyectos, yo, contacto);
+        activauno(proyectos, yo);
         aparecer(contproyectos);
-    }
-})
-
-contacto.addEventListener("click", function () {
-    if (b3 == false) {
-        contSobreMi.style.display = "none";
-        contproyectos.style.display = "none";
-        contcontactos.style.display = "block";
-        b1 = false;
-        b2 = false;
-        b3 = true;
-        activauno(contacto, yo, proyectos);
-        aparecer(contcontactos);
     }
 })
 
@@ -120,4 +97,4 @@ ilinkedin.addEventListener("click", function(){
 
 iinstagram.addEventListener("click", function(){
     window.location="https://www.instagram.com/dhan_music25/"
-})
+})*/
