@@ -16,6 +16,16 @@ html{
     scroll-behavior: smooth;
 }
 
+.toggle{
+    background-color: #000000;
+    border: 1px solid white;
+    color: white;
+    font-size: 30px;
+    position: fixed;
+    right: 10px;
+    border-radius: 10px;
+}
+
 #portada h1 {
     color: rgb(100, 198, 190);
 }
@@ -256,18 +266,23 @@ a{
 
 /* Celulares */
  @media screen and (max-width: 480px) { 
-     .containers,#dev, .containerTecnologias, .barra{
+    #portada{
+        height: 100vh;
+    }
+    #informacionuno{
+        margin-top: 30vh;
+        font-size: 10vw;
+    }
+     .containers, .containerTecnologias, .barra{
          font-size: 18px;
      }
      #baja{
-         font-size: 15px;
+         
+         font-size: 6vw;
      }
 
-     .barra {
-        width:25vw;
-        height: 8vh;
-        padding: 5px;
-        font-size: 3vw;
+     .barra, #barracontent {
+        display: none;
     }
 
     #containerHobbies{
