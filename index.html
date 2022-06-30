@@ -1,251 +1,40 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daniel Velasquez</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        body{
+            background-color: black;
+        }
+    </style>
+    <link rel="icon" href="http://drive.google.com/uc?export=view&id=1M3Q5uhZj0mI1V1DoKnM_tEtddixQ0Qn8">
 </head>
 
 <body>
-    <div id="containerFlexboxPagina">
-        <div id="portada" class="todoFlex">
-            <div id="informacionuno">
-                <h1>Daniel Velasquez</h1>
-                <label id="dev">Desarrollador&nbsp;<span id="maquinaescr">&#160;</span></label><br>
-                <div id="bajar">
-                    <h4 id="baja">Desliza hacia abajo</h4>
-                    <span id="flecha">&#8595;</span>
-                </div>
 
-            </div><br><br>
-        </div>
+    <script>
+        window.onload = function () {
 
-        <header id="barracontent">
-            <a href="#contenidoSobreMi"><button id="sm" class="barra">Sobre mi</button></a>
-            <a href="#comps"><button id="cm" class="barra">Competencias</button></a>
-            <a href="#contenidoProyectos"><button id="pr" class="barra">Proyectos</button></a>
-            <!-- <a href="#comps"><button id="cm" class="barra">Contacto</button></a> -->
-        </header>
-        <button class="toggle">
-            <i class="fas fa-bars"></i>
-        </button>
-
-        <div id="contTotal">
-            <div id="contenidoSobreMi" class="containers todoFlex">
-                <h1>¿Quién Soy?</h1>
-                <p>¡Hola! Mi nombre es Daniel, soy un joven desarrollador de 17 años de edad que utiliza diferentes
-                    tecnologías
-                    para realizar sus
-                    trabajos.</p>
-                <h1>Mis hobbies</h1><br>
-                <div id="containerHobbies">
-                    <div class="hobbies">
-                        <img class="hobbie"
-                            src="https://images.pexels.com/photos/210766/pexels-photo-210766.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                            alt="Musica">
-                        <p class="parrafoScroll">Soy músico multiinstrumentista, me gusta tocar guitarra, piano y
-                            ukelele</p>
-                    </div>
-                    <div class="hobbies">
-                        <img class="hobbie"
-                            src="https://images.pexels.com/photos/614117/pexels-photo-614117.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                            alt="Programacion">
-                        <p class="parrafoScroll">Me encanta practicar la programación y el desarrollo de software</p>
-                    </div>
-                    <div class="hobbies">
-                        <img class="hobbie"
-                            src="https://media.istockphoto.com/photos/young-woman-and-man-in-headphones-learning-different-languages-picture-id1032296056?k=20&m=1032296056&s=612x612&w=0&h=H8MoJ9b84iQNLU8riiQ_wIFngsSlKmguxw712W3Jj4Q="
-                            alt="Idiomas">
-                        <p class="parrafoScroll">Soy muy fan de aprender y prácticar idiomas, solo y con compañía</p>
-                    </div>
-                    <div class="hobbies"><img class="hobbie"
-                            src="https://images.pexels.com/photos/1906658/pexels-photo-1906658.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                            alt="Cielo">
-                        <p class="parrafoScroll">No hay nada que me transmita más paz y tranquilidad que ver el cielo en
-                            cualquier momento y hora del
-                            día</p>
-                    </div>
-                </div><br>
-                <div id="idiomas">
-                <h1>Idiomas</h1>
-                <ul>
-                    <li>Español - Nativo</li>
-                    <li>Italiano - Avanzado</li>
-                    <li>Inglés - Intermedio</li>
-                </ul></div><br>
-                <hr>
-                <h1 id="comps">Mis competencias</h1><br>
-                <div id="habilidades">
-                    <div class="containerTecnologias">
-                        <div class="tecnologias tamaño">
-                            <img class="iconos" src="https://cdn-icons-png.flaticon.com/512/1216/1216733.png"
-                                alt="HTML5"><br>
-                            <label>HTML 5</label>
-                        </div>
-
-                        <div class="tecnologias ">
-                            <img class="iconos" src="https://cdn-icons-png.flaticon.com/512/919/919826.png"
-                                alt="CSS3"><br>
-                            <label>CSS</label>
-                        </div>
-
-                        <div class="tecnologias ">
-                            <img class="iconos"
-                                src="data:image/png;base64,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"
-                                alt="Javascript"><br>
-                            <label>Javascript</label>
-                        </div>
-
-                        <div class="tecnologias">
-                            <img class="iconos"
-                                src="https://flaticons.net/icon.php?slug_category=brand-identity&slug_icon=logo-jquery"
-                                alt="jQuery"><br>
-                            <label>jQuery</label>
-                        </div>
-
-                        <div class="tecnologias">
-                            <img class="iconos"
-                                src="https://icon-library.com/images/ajax-icon/ajax-icon-7.jpg"
-                                alt="Ajax"><br>
-                            <label>Ajax</label>
-                        </div>
-
-                        <div class="tecnologias ">
-                            <img class="iconos"
-                                src="https://docs.angular.lat/assets/images/logos/angularjs/AngularJS-Shield.svg"
-                                alt="Angular"><br>
-                            <label>Angular</label>
-                        </div>
-
-                        <div class="tecnologias ">
-                            <img class="iconos" src="https://cdn-icons-png.flaticon.com/512/226/226777.png"
-                                alt="Java"><br>
-                            <label>Java</label>
-                        </div>
-
-                        <div class="tecnologias ">
-                            <img class="iconos" id="node" src="https://louisberanger.fr/img/skills/node.png"
-                                alt="NodeJS"><br>
-                            <label>NodeJS</label>
-                        </div>
-
-                        <div class="tecnologias ">
-                            <img class="iconos" src="https://louisberanger.fr/img/skills/express.png"
-                                alt="ExpressJS"><br>
-                            <label>Express</label>
-                        </div>
+            var ln = navigator.language || navigator.userLanguage;
+            let pagActual = window.location.pathname;
 
 
-                        <div class="tecnologias ">
-                            <img class="iconos"
-                                src="https://progsoft.net/images/ejs-icon-bccf3f017751a71ee75c69021ee1020fc0d9067e.jpg"
-                                alt="EJS"><br>
-                            <label>EJS</label>
-                        </div>
+            if (ln == 'en' || ln == 'en-En' && !pagActual.includes("indexEn")) {
+                window.location.href = '/lang/En/indexEn.html';
+            } else if (ln == 'es-ES' || ln == "es" || ln == "es-419" && !pagActual.includes("indexEs")) {
+                window.location.href = '/lang/Es/indexEs.html';
+            } else if (ln == 'it' && !pagActual.includes("indexIt")) {
+                window.location.href = '/lang/It/indexIt.html';
+            } else {
+                window.location.href = '/lang/En/indexEn.html';
+            }
 
-                        <div class="tecnologias ">
-                            <img class="iconos"
-                                src="https://progsoft.net/images/mongodb-icon-ef1d0933dc5742cc127653f5c24df866aa681ee3.png"
-                                alt="MongoDB"><br>
-                            <label>MongoDB</label>
-                        </div>
-
-                        <div class="tecnologias ">
-                            <img class="iconos" src="https://cdn.worldvectorlogo.com/logos/git-icon.svg" alt="Git"><br>
-                            <label>Git</label>
-                        </div>
-
-                    </div><br>
-                </div>
-
-            </div><br>
-            <hr>
-
-            <div id="contenidoProyectos" class="containers todoFlex">
-                <h1>Proyectos</h1>
-                <div id="containerProyectos">
-                    <a href="">
-                        <div class="proyectos">
-                            <img class="imgProyectos"
-                                src="http://drive.google.com/uc?export=view&id=1qS9AvODRZQrSnon5WDI2P3txk0hUK-NW"
-                                alt="TestVocacional">
-                            <aside><strong class="tituloproyectos">Test Vocacional</strong><br>
-                                Test de orientacion vocacional de 60 preguntas que te ayuda a enfatizarte en un énfasis
-                                de un colegio
-                                y contiene integraciónes con excel, menú para analizar al estudiante, diagramas y
-                                opciones de carreras afines<br>
-                                <strong class="tituloproyectos">Tecnologías usadas</strong><br>
-                                Java, JFreeChart, Apache POI, Excel <br>
-                            </aside>
-                        </div>
-                    </a>
-
-                    <a href="">
-                        <div class="proyectos">
-                            <img class="imgProyectos"
-                                src="http://drive.google.com/uc?export=view&id=14Sa-eiAQGcdUTmlIEdN6GBIS7Zy84z1W"
-                                alt="Reservas">
-                            <aside><strong class="tituloproyectos">Página de reservas</strong><br>
-                                Página web que contiene un sistema completo sobre la reserva de un restaurante y elegir
-                                los
-                                productos que deseas<br>
-                                <strong class="tituloproyectos">Tecnologías usadas</strong><br>
-                                HTML, CSS, JS
-                            </aside>
-                        </div>
-                    </a>
-
-                    <a href="">
-                        <div class="proyectos">
-                            <img class="imgProyectos"
-                                src="http://drive.google.com/uc?export=view&id=1Q6xAifDX2-r90wF694Z4ueENFa32-vUN"
-                                alt="Facturas">
-                            <aside><strong class="tituloproyectos">Página que genera facturas</strong><br>
-                                Página web que permite ingresar tus datos y de acuerdo a ellos genera 2 tablas de manera
-                                organizada que muestran tu factura<br>
-                                <strong class="tituloproyectos">Tecnologías usadas</strong><br>
-                                HTML, CSS, JS
-                            </aside>
-                        </div>
-                    </a>
-
-                    <a href="">
-                        <div class="proyectos">
-                            <img class="imgProyectos"
-                                src="http://drive.google.com/uc?export=view&id=1ENbeDLcsjudbL5hvET7lveX3cqipWHVJ"
-                                alt="Calculadora">
-                            <aside><strong class="tituloproyectos">Calculadora y conversor de texto</strong><br>
-                                Calculadora completamente funcional, conversor de texto de la manera mostrada y todas
-                                las
-                                operaciones se guardan en la memoria del navegador<br>
-                                <strong class="tituloproyectos">Tecnologías usadas</strong><br>
-                                HTML, CSS, JS
-                            </aside>
-                        </div>
-                    </a>
-
-                </div>
-
-            </div>
-            <footer>
-
-            </footer>
-
-            <!-- <img class="iconos redes" id="gmail" src="https://cdn-icons-png.flaticon.com/512/281/281769.png" -->
-            <!-- <img class="iconos redes" id="instagram"src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Instagram-Icon.png/800px-Instagram-Icon.png" alt="CSS3"><br> -->
-            <!-- <img class="iconos redes"  id="linkedin"src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/LinkedIn_icon_circle.svg/1200px-LinkedIn_icon_circle.svg.png"alt="LinkedIn"><br> -->
-        </div>
-    </div>
-
-
-
-
-
-    <script src="https://kit.fontawesome.com/7e5b2d153f.js" crossorigin="anonymous"></script>
-    <script src="javascript/script.js"></script>
+        }
+    </script>
 </body>
 
 </html>

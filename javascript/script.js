@@ -1,100 +1,19 @@
-var contproyectos = this.document.getElementById("contenidoProyectos");
-var contSobreMi = this.document.getElementById("contenidoSobreMi");
-
-
-//Animaciones
-
-var animacion1 = this.document.getElementById("barracontent");
-var bajar = this.document.getElementById("bajar");
-animacion1.style.opacity = "0";
-contSobreMi.style.opacity = "0";
-// contproyectos.style.opacity = "0";
-
-
-//Animacion Scroll
-window.addEventListener("scroll", function () {
-
-    var posicionObj1 = animacion1.getBoundingClientRect().top;
-    var posicionObj2 = contSobreMi.getBoundingClientRect().top;
-    let tamañoDePantalla = window.innerHeight / 1.7;
-    let tamañoDePantalla2 = window.innerHeight / 2.3;
-
-    if (posicionObj1 < tamañoDePantalla) {
-        animacion1.style.opacity = "100%"
-        bajar.style.opacity = "0%"
-    } else {
-        animacion1.style.opacity = "0%"
-        bajar.style.opacity = "100%"
-        contSobreMi.style.opacity = "0%"
-    }
-    if (posicionObj2 < tamañoDePantalla2) {
-        contSobreMi.style.opacity = "100%"
-    } else {
-        contSobreMi.style.opacity = "0%"
-    }
-
-})
-/*
-//Que contenido es visible
-
-var yo = this.document.getElementById("sm");
-var proyectos = this.document.getElementById("pr");
-// activauno(yo, proyectos);
-var b1 = true;
-var b2 = false;
-
-// contproyectos.style.display = "none";
-
-// function activauno(a, b, c) {
-//     a.classList.add("active");
-//     b.classList.remove("active");
-// }
-
-yo.addEventListener("click", function () {
-    if (b1 == false) {
-        contSobreMi.style.display = "block";
-        contproyectos.style.display = "none";
-        b1 = true;
-        b2 = false;
-        activauno(yo, proyectos);
-        aparecer(contSobreMi);
-    }
-})
-
-proyectos.addEventListener("click", function () {
-    if (b2 == false) {
-        contSobreMi.style.display = "none";
-        contproyectos.style.display = "block";
-        b1 = false;
-        b2 = true;
-        activauno(proyectos, yo);
-        aparecer(contproyectos);
-    }
-})
-
-
-//animaciones aparecer
-function aparecer(a) {
-    a.style.opacity = "100%"
-}
-
-//link a mis redes sociales
-
+AOS.init();
 const igmail = document.querySelector("#gmail");
-const ilinkedin = document.querySelector("#linkedin");
-const iinstagram = document.querySelector("#instagram");
 
-igmail.addEventListener("click", function(){
+igmail.addEventListener("click", function(e){
+    alert("Hola")
+    e.preventDefault();
     var sLink = "mailto:" + escape("danielesteban2004@gmail.com")
-	 + "?subject=" + escape("Saludo")
-	 + "&body=" + "Hola Dani!";
-	window.location.href = sLink;
+     + "?subject=" + escape("Saludo")
+     + "&body=" + "Hola Dani!";
+    window.location.href = sLink;
 })
 
-ilinkedin.addEventListener("click", function(){
-    window.location="https://www.linkedin.com/in/daniel-velasquez-9523411b2/"
-})
+// Funcion boton hamburguesa
+const but = document.querySelector("#navToggle")
+const navMenu = document.querySelector(".navMenu")
 
-iinstagram.addEventListener("click", function(){
-    window.location="https://www.instagram.com/dhan_music25/"
-})*/
+but.addEventListener("click", ()=>{
+    navMenu.classList.toggle("navVisible")
+})
