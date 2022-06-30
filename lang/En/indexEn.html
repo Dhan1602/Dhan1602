@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -9,15 +9,15 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../../css/styles.css">
     <link rel="icon" href="http://drive.google.com/uc?export=view&id=1M3Q5uhZj0mI1V1DoKnM_tEtddixQ0Qn8">
+    <script src="https://kit.fontawesome.com/7e5b2d153f.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <div id="containerFlexboxPagina">
         <div id="informacionuno">
             <h1 class="titles">Daniel Velasquez</h1>
-            <label id="dev" class="titles">Web Developer&nbsp;<span id="maquinaescr">&#160;</span></label><br>
+            <label id="dev" class="titles">Desarrollador Web&nbsp;<span id="maquinaescr">&#160;</span></label><br>
             <div id="bajar">
-                <!-- <h4 id="baja">Swipe down</h4> -->
                 <h4 id="baja">Desliza hacia abajo</h4>
                 <span id="flecha">&#8595;</span>
             </div>
@@ -25,28 +25,28 @@
     </div>
 
     <nav id="barracontent">
-        <!-- <a href="#contenidoSobreMi"><button id="sm" class="barra">About me</button></a>
-        <a href="#comps"><button id="cm" class="barra">Competences</button></a>
-        <a href="#contenidoProyectos"><button id="pr" class="barra">Projects</button></a>
-         <a href="#Contacto"><button id="cm" class="barra">Contact</button></a>  -->
-         <a href="#contenidoSobreMi"><button id="sm" class="barra">Sobre mi</button></a>
-         <a href="#comps"><button id="cm" class="barra">Competencias</button></a>
-         <a href="#contenidoProyectos"><button id="pr" class="barra">Proyectos</button></a>
-          <a href="#Contacto"><button id="cm" class="barra">Contacto</button></a> 
+        <a href="#contenidoSobreMi"><button id="sm" class="barra">Sobre mi</button></a>
+        <a href="#comps"><button id="cm" class="barra">Competencias</button></a>
+        <a href="#contenidoProyectos"><button id="pr" class="barra">Proyectos</button></a>
+         <a href="#Contacto"><button id="cm" class="barra">Contacto</button></a> 
     </nav>
-    <button class="toggle">
+    <button class="toggle" id="navToggle">
         <i class="fas fa-bars"></i>
     </button>
+    <div class="navMenu">
+        <a href="#contenidoSobreMi">Sobre mi</a>
+        <a href="#comps">Competencias</a>
+        <a href="#contenidoProyectos">Proyectos</a>
+        <a href="#Contacto">Contacto</a> 
+    </div>
 
     <div id="contTotal" data-aos="fade-up">
         <div id="contenidoSobreMi" class="containers todoFlex">
-            <!-- <h1 class="titles">Who I am?</h1> -->
-            <h1 class="titles">¿Quién soy?</h1>
+            <h1 class="titles">¿Quién Soy?</h1>
             <p>¡Hola! Mi nombre es Daniel, soy un joven desarrollador de 17 años de edad que utiliza diferentes
                 tecnologías
                 para realizar sus
                 trabajos.</p>
-            <!-- <h1 class="titles">My hobbies</h1><br> -->
             <h1 class="titles">Mis hobbies</h1><br>
             <div id="containerHobbies">
                 <div class="hobbies">
@@ -77,21 +77,15 @@
                 </div>
             </div><br>
             <div id="idiomas" data-aos="fade-up">
-                <!-- <h1 class="titles">Languages</h1> -->
                 <h1 class="titles">Idiomas</h1>
-
                 <ul>
-                    <!-- <li>Spanish - Native</li>
-                    <li>Italian - Advanced</li>
-                    <li>Inglés - Intermediate</li> -->
                     <li>Español - Nativo</li>
-                    <li>Italian - Advanced</li>
-                    <li>Inglés - Intermediate</li>
+                    <li>Italiano - Avanzado</li>
+                    <li>Inglés - Intermedio</li>
                 </ul>
             </div><br>
             <hr>
-            <!-- <h1 id="comps" class="titles" data-aos="fade-up">My Competences</h1><br> -->
-            <h1 id="comps" class="titles" data-aos="fade-up">Mis Competencias</h1><br>
+            <h1 id="comps" class="titles" data-aos="fade-up">Mis competencias</h1><br>
             <div id="habilidades" data-aos="fade-up">
                 <div class="containerTecnologias">
                     <div class="tecnologias">
@@ -179,7 +173,6 @@
         <hr>
 
         <div id="contenidoProyectos" class="containers todoFlex" data-aos="fade-up">
-            <!-- <h1 class="titles">Projects</h1> -->
             <h1 class="titles">Proyectos</h1>
             <label> Haz click si deseas ver el código del proyecto</label>
             <div id="containerProyectos">
@@ -276,7 +269,6 @@
         </div>
     </div>
     <footer>
-        <!-- <h1 class="titles" id="Contacto">Contact</h1> -->
         <h1 class="titles" id="Contacto">Contacto</h1>
         <div id="redes">
            <a href="gmail" id="gmail"><img class="iconos red" src="https://cdn-icons-png.flaticon.com/512/281/281769.png"></a>
@@ -286,7 +278,6 @@
         </div>
     </footer>
     </div>
-
 
 
 
