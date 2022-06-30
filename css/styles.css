@@ -408,6 +408,9 @@ footer{
         margin-right: 15px;
         
     }
+    .proyectos{
+        text-align: justify;
+    }
 }
 
 /* Tablets */
