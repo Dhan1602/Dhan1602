@@ -2,7 +2,6 @@ AOS.init();
 const igmail = document.querySelector("#gmail");
 
 igmail.addEventListener("click", function(e){
-    alert("Hola")
     e.preventDefault();
     var sLink = "mailto:" + escape("danielesteban2004@gmail.com")
      + "?subject=" + escape("Saludo")
