@@ -67,7 +67,7 @@ const observer = new IntersectionObserver(secciones => {
                 flechita(flechas[2], flechas[0], flechas[1], flechas[3]);
             } else if (section.target.getAttribute("id") == "footer") {
                 navScroll(barra[3], barra[0], barra[1], barra[2]);
-                navScroll(menuR[3], menuR[0], menuR[1], menuR[2]);
+                navRScroll(menuR[3], menuR[0], menuR[1], menuR[2]);
                 flechita(flechas[3], flechas[0], flechas[1], flechas[2]);
             }
         }
