@@ -79,12 +79,6 @@ const observer = new IntersectionObserver(secciones => {
 
 misElementos.forEach(elem => observer.observe(elem));
 
-menuR.forEach(link => {
-    link.addEventListener("click", async ()=>{
-        setTimeout(()=> navMenu.classList.toggle("navVisible"), 300)
-    });
-});
-
 // Hover en el nivel
 
 const iconos = document.querySelectorAll(".iconos");
