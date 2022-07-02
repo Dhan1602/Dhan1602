@@ -81,10 +81,37 @@ misElementos.forEach(elem => observer.observe(elem));
 
 menuR.forEach(link => {
     link.addEventListener("click", async ()=>{
-        window.onload = () => {
-            setTimeout(()=> navMenu.classList.toggle("navVisible"), 300)
-            
-        }
-       
-    })
+        setTimeout(()=> navMenu.classList.toggle("navVisible"), 300)
+    });
 });
+
+// Hover en el nivel
+
+const iconos = document.querySelectorAll(".iconos");
+const niveles = document.querySelectorAll(".nivel");
+const arrayIconos = Array.from(iconos);
+
+var listen = arrayIconos.filter((elementoo) => elementoo.parentNode.getAttribute("class") == "lengImage");
+
+listen.forEach((elem, ind) => {
+    elem.addEventListener("mouseenter", ()=>{
+        elem.style.setProperty("opacity", "25%")
+        niveles[ind].style.setProperty("opacity", "100%")
+    });
+    elem.addEventListener("mouseleave", ()=>{
+        elem.style.setProperty("opacity", "100%")
+        niveles[ind].style.setProperty("opacity", "0%")
+    });
+    
+    niveles[ind].addEventListener("mouseenter", ()=>{
+        elem.style.setProperty("opacity", "25%")
+        niveles[ind].style.setProperty("opacity", "100%")
+    });
+    niveles[ind].addEventListener("mouseleave", ()=>{
+        elem.style.setProperty("opacity", "100%")
+        niveles[ind].style.setProperty("opacity", "0%")
+    });
+
+})
+console.log(listen)
+
