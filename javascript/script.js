@@ -78,3 +78,13 @@ const observer = new IntersectionObserver(secciones => {
 });
 
 misElementos.forEach(elem => observer.observe(elem));
+
+menuR.forEach(link => {
+    link.addEventListener("click", async ()=>{
+        window.onload = () => {
+            setTimeout(()=> navMenu.classList.toggle("navVisible"), 300)
+            
+        }
+       
+    })
+});
