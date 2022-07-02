@@ -25,19 +25,22 @@ function navScroll(a, b, c, d) {
     c.classList.remove("active")
     d.classList.remove("active")
 }
-function navRScroll(a, b, c) {
+function navRScroll(a, b, c, d) {
     a.style.setProperty("font-size", "10vw")
     a.style.setProperty("text-decoration", "none")
     b.style.setProperty("font-size", "8vw")
     b.style.setProperty("text-decoration", "underline #fff")
     c.style.setProperty("font-size", "8vw")
     c.style.setProperty("text-decoration", "underline #fff")
+    d.style.setProperty("font-size", "8vw")
+    d.style.setProperty("text-decoration", "underline #fff")
 }
 
-function flechita(a, b, c) {
+function flechita(a, b, c, d) {
     a.style.setProperty("opacity", "100%")
     b.style.setProperty("opacity", "0%")
     c.style.setProperty("opacity", "0%")
+    d.style.setProperty("opacity", "0%")
 }
 
 const barra = document.querySelectorAll(".barra");
@@ -51,19 +54,21 @@ const observer = new IntersectionObserver(secciones => {
         if (section.isIntersecting) {
             if (section.target.getAttribute("id") == "about") {
                 navScroll(barra[0], barra[1], barra[2], barra[3]);
-                navRScroll(menuR[0], menuR[1], menuR[2]);
-                flechita(flechas[0], flechas[1], flechas[2]);
+                navRScroll(menuR[0], menuR[1], menuR[2], menuR[3]);
+                flechita(flechas[0], flechas[1], flechas[2], flechas[3]);
             } else if (section.target.getAttribute("id") == "abilities") {
                 navScroll(barra[1], barra[2], barra[3], barra[0]);
-                navRScroll(menuR[1], menuR[2], menuR[0]);
-                flechita(flechas[1], flechas[2], flechas[0]);
+                navRScroll(menuR[1], menuR[2], menuR[3], menuR[0]);
+                flechita(flechas[1], flechas[2], flechas[3], flechas[0]);
             }
             else if (section.target.getAttribute("id") == "contenidoProyectos") {
                 navScroll(barra[2], barra[0], barra[1], barra[3]);
-                navRScroll(menuR[2], menuR[0], menuR[1]);
-                flechita(flechas[2], flechas[0], flechas[1]);
+                navRScroll(menuR[2], menuR[0], menuR[1], menuR[3]);
+                flechita(flechas[2], flechas[0], flechas[1], flechas[3]);
             } else if (section.target.getAttribute("id") == "footer") {
                 navScroll(barra[3], barra[0], barra[1], barra[2]);
+                navScroll(menuR[3], menuR[0], menuR[1], menuR[2]);
+                flechita(flechas[3], flechas[0], flechas[1], flechas[2]);
             }
         }
     });
