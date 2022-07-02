@@ -56,10 +56,12 @@ html{
     background: none;
     text-decoration: none;
     color: white;
+    text-decoration: underline #FFF;
 }.navVisible{
     left: 0%;
 }.arrow{
     transition: all 0.2s ease 0s ;
+    opacity: 0;
 }
 
 #portada{
