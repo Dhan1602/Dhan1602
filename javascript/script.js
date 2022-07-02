@@ -107,5 +107,3 @@ listen.forEach((elem, ind) => {
     });
 
 })
-console.log(listen)
-
