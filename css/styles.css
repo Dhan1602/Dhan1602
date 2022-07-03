@@ -380,7 +380,7 @@ footer {
     justify-content: center;
     display: grid;
     width: 100%;
-    grid-template-columns: repeat(4, 90px);
+    grid-template-columns: repeat(3, 90px);
     grid-template-rows: repeat(1, 60px);
     grid-gap: 50px;
     margin-bottom: 10px;
@@ -398,7 +398,7 @@ footer {
     border-radius: 25px;
 }
 
-#gh {
+.gh {
     border-radius: 100%;
 }
 
@@ -408,7 +408,7 @@ footer {
 }
 
 #lenguajes {
-    margin-top: 10vh;
+    margin-top: 2vh;
 }
 
 #langLinks {
@@ -423,6 +423,12 @@ footer {
 
 #footer {
     padding-bottom: 20px;
+}
+#alerta{
+    opacity: 0;
+    font-size: 2vw;
+    transition: opacity .5s ease;
+    user-select: none;
 }
 
 
@@ -491,6 +497,9 @@ footer {
 
     #containerProyectos {
         font-size: 18px;
+    }
+    #alerta{
+        font-size: 23px;
     }
 
     .imgProyectos {

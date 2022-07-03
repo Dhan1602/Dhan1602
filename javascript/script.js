@@ -107,3 +107,25 @@ listen.forEach((elem, ind) => {
     });
 
 })
+
+// Copiar numero de telefono
+
+const celu = document.getElementById("phone");
+const alrta = document.getElementById("alerta");
+
+celu.addEventListener("click", (e)=>{
+    e.preventDefault();
+    if (!navigator.clipboard) {
+        // Clipboard API not available
+        return
+    } else {
+        navigator.clipboard.writeText("+57 3003043694")
+        .then(() => {
+        alrta.style.setProperty("opacity", "100%")
+        setTimeout(()=> alrta.style.setProperty("opacity", "0"), 1500)
+    })
+        .catch(err => {
+        console.log('Something went wrong', err);
+    })
+    }
+});
