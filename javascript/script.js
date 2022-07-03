@@ -1,11 +1,14 @@
+// Scroll Function
 AOS.init();
+
+//Function email
 const igmail = document.querySelector("#gmail");
 
 igmail.addEventListener("click", function (e) {
     e.preventDefault();
-    var sLink = "mailto:" + escape("danielesteban2004@gmail.com")
-        + "?subject=" + escape("Saludo")
-        + "&body=" + "Hola Dani!";
+    var sLink = "mailto:" + escape("danielesteban2004@gmail.com");
+        // + "?subject=" + escape("Saludo")
+        // + "&body=" + "Hola Dani!";
     window.location.href = sLink;
 })
 
