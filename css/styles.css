@@ -270,6 +270,7 @@ ul {
     display: inline-block;
     position: relative;
     opacity: 0;
+    user-select: none;
 }
 
 .lengImage {
@@ -279,6 +280,7 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
+    user-select: none;
 }
 
 .containerTecnologias {
