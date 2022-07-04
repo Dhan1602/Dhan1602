@@ -382,7 +382,7 @@ footer {
     justify-content: center;
     display: grid;
     width: 100%;
-    grid-template-columns: repeat(3, 90px);
+    grid-template-columns: repeat(3, 140px);
     grid-template-rows: repeat(1, 60px);
     grid-gap: 50px;
     margin-bottom: 10px;
@@ -407,6 +407,11 @@ footer {
 .red {
     width: 60px;
     height: 60px;
+}
+
+.redesFlex{
+    display: flex;
+    flex-direction: column;
 }
 
 #lenguajes {
