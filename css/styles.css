@@ -288,10 +288,10 @@ ul {
     align-items: center;
     text-align: center;
     margin: 10px auto;
-    font-size: 1.6vw;
+    font-size: 1vw;
     justify-content: center;
-    grid-template-columns: repeat(4, auto);
-    grid-template-rows: repeat(auto, 60px);
+    grid-template-columns: repeat(4, 90px);
+    grid-template-rows: repeat(auto, 90px);
     grid-gap: 5vw;
 }
 
